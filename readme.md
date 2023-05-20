@@ -411,3 +411,28 @@ remote:      https://github.com/Gihozo23/Gym-Git-Exercise-Solution/pull/new/ft/h
 remote:
 To https://github.com/Gihozo23/Gym-Git-Exercise-Solution.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+ # Bundle 4
+ # Exercise 1
+
+git-copy
+origin
+PS C:\Users\user\Documents\git_exercises> git add home.html
+PS C:\Users\user\Documents\git_exercises> git commit -m " new changes to the home.html file"
+[main a9b66a2]  new changes to the home.html file     
+ 1 file changed, 1 insertion(+)
+PS C:\Users\user\Documents\git_exercises> git push origin 
+Enumerating objects: 5, done.
+Compressing objects: 100% (3/3), done.
+ local objects.
+To https://github.com/Gihozo23/Gym-Git-Exercise-Solution.git
+   4e685cb..a9b66a2  main -> main
+PS C:\Users\user\Documents\git_exercises> git push git-copy
+Enumerating objects: 78, done.
+Counting objects: 100% (78/78), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (77/77), done.
+Writing objects:  42% (33/78), 984.00 KiB | 152.00 KiBWriting objects:  42% (33/78), 1.27 MiB | 173.00 KiB/sWriting objects: 100% (78/78), 1.91 MiB | 223.00 KiB/s, done.
+Total 78 (delta 40), reused 0 (delta 0), pack-reused 0remote: Resolving deltas: 100% (40/40), done.
+To https://github.com/Gihozo23/git_exercise_copy.git
+ * [new branch]      main -> main
