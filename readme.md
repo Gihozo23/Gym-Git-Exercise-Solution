@@ -436,3 +436,57 @@ Writing objects:  42% (33/78), 984.00 KiB | 152.00 KiBWriting objects:  42% (33/
 Total 78 (delta 40), reused 0 (delta 0), pack-reused 0remote: Resolving deltas: 100% (40/40), done.
 To https://github.com/Gihozo23/git_exercise_copy.git
  * [new branch]      main -> main
+
+# Exercise 2
+
+PS C:\Users\user\Documents\git_exercises> git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+PS C:\Users\user\Documents\git_exercises> git add footer.html
+PS C:\Users\user\Documents\git_exercises> git commit -m "new file called foot
+[ft/footer 8cc003f] new file called footer.html added
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\user\Documents\git_exercises> git add readme.md
+PS C:\Users\user\Documents\git_exercises> git commit -m "new changes in the r
+[ft/footer 21a894a] new changes in the readme.md file
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\user\Documents\git_exercises> git push --set-upstream origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+b by visiting:
+ise-Solution/pull/new/ft/footer                       done.
+remote:
+To https://github.com/Gihozo23/Gym-Git-Exercise-Soluti local objects.        on.git
+branch 'ft/footer' set up to track 'origin/ft/footer'.b by visiting:
+                                                      ise-Solution/pull/new/f
+PS C:\Users\user\Documents\git_exercises> git checkout main
+Switched to branch 'main'                             on.git
+Your branch is up to date with 'origin/main'.
+PS C:\Users\user\Documents\git_exercises> git checkout -b ft/squashing                                       main
+Switched to a new branch 'ft/squashing'
+PS C:\Users\user\Documents\git_exercises> git merge --squash ft/footer                                       -b ft/squashing
+Updating a9b66a2..21a894a
+Fast-forward                                          squash ft/footer
+Squash commit -- not updating HEAD
+ footer.html | 12 ++++++++++++
+ readme.md   | 27 ++++++++++++++++++++++++++-
+ 2 files changed, 38 insertions(+), 1 deletion(-)     
+ create mode 100644 footer.html
+[ft/squashing c85756b] Footer changes squashing       
+ 2 files changed, 38 insertions(+), 1 deletion(-)     
+ create mode 100644 footer.html
+PS C:\Users\user\Documents\git_exercises> git push origin ft/squashing
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 946 bytes | 473.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0  
+remote: Resolving deltas: 100% (2/2), completed with 2remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/Gihozo23/Gym-Git-Exercise-Solution/pull/new/ft/squashing
+remote:
+To https://github.com/Gihozo23/Gym-Git-Exercise-Solution.git
+ * [new branch]      ft/squashing -> ft/squashing
